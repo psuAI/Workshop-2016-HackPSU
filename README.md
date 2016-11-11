@@ -11,5 +11,11 @@ please send your name and email to ljj5099@psu.edu for all the future notificati
 * Secretary: Licheng Jiang
 * Webmaster: Bingyao Li
 
+Setup Instructions: 
+* Install Pycharm IDE: https://www.jetbrains.com/pycharm/download/#section=windows
+* Install Python 2.7.12: https://www.python.org/downloads/
+You should be good to go! 
+
+
 Presentation Link:
 https://docs.google.com/presentation/d/1VsfCGL-XsssdJPb46QvaCk_MNQc5VbyN6GDle9xhnZc/edit?usp=sharing
