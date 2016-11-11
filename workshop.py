@@ -31,6 +31,7 @@ trainingDataSpam = "data/spam"
 trainingDataHam = "data/ham"
 smoothing = 1e-5
 
+
 def load_tokens(email_path):
     """DO NOT EDIT THIS FUNCTION! Returns a list of all words in a file."""
     contents = []
@@ -50,8 +51,10 @@ def get_contents(mail_path):
 
     return contents
 
-# the calculation of the log of possibility, put zero for value if it is unknown
+
 def log_possibility(value, total, counter):
+    """DO NOT EDIT THIS FUNCTION! Calculation of the log of possibility.
+        Put zero for value if it is unknown."""
     return math.log(float(value + smoothing) / (total + smoothing * (len(counter) + 1)))
 
 
@@ -82,7 +85,8 @@ class SpamFilter(object):
 #       Three thing need to be done:
 #           1. count through the contents, put the amount of each word in the counter
 #           2. use the function log_possibility to calculate the log for each words
-#           3. complete the is_spam() function by sum up all the log for spam and ham and then get the result by comparing them
+#           3. complete the is_spam() function by sum up all the log for spam and ham and then
+#              get the result by comparing them
 #
 #
 #################################################################################################
@@ -90,18 +94,18 @@ class SpamFilter(object):
         # There are some examples of how to use log_possibility function, uncomment and change 'A word' to try it out
         # self.spam_log['A word'] = log_possibility(self.spam_counter['A word'], self.total_spam, self.spam_counter)
         
-    # compare the possibility of spam and non-spam to get a True/False result
+    # Compare the possibility of spam and non-spam to get a True/False result
     def is_spam(self, email_path):
         pass
 
-    # All the followings are optional in case that you finish it so fast
+    # All the following are optional, in case that you finish it so fast!
     # ==================================================================
 
-    # update the spam data, so your model can learn when it is working
+    # Update the spam data, so your model can learn when it is working
     def add_spam(self, email_path):
         pass
 
-    # update the ham data, so your model can learn when it is working
+    # Update the ham data, so your model can learn when it is working
     def add_ham(self, email_path):
         pass
         
