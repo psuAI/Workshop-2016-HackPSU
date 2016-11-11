@@ -50,10 +50,8 @@ def get_contents(mail_path):
 
     return contents
 
+# the calculation of the log of possibility, put zero for value if it is unknown
 def log_possibility(value, total, counter):
-    """DO NOT EDIT THIS FUNCTION! The calculation of the log of possibility.
-        Put zero for value if it is unknown."""
-
     return math.log(float(value + smoothing) / (total + smoothing * (len(counter) + 1)))
 
 
@@ -77,6 +75,18 @@ class SpamFilter(object):
         spam_contents = get_contents(trainingDataSpam)  # List of all the file contents from spam folder
         ham_contents = get_contents(trainingDataHam)  # List of all the file contents from ham folder
 
+#################################################################################################
+#
+# This is where you start to add codes
+#
+#       Three thing need to be done:
+#           1. count through the contents, put the amount of each word in the counter
+#           2. use the function log_possibility to calculate the log for each words
+#           3. complete the is_spam() function by sum up all the log for spam and ham and then get the result by comparing them
+#
+#
+#################################################################################################
+        
         # There are some examples of how to use log_possibility function, uncomment and change 'A word' to try it out
         # self.spam_log['A word'] = log_possibility(self.spam_counter['A word'], self.total_spam, self.spam_counter)
         
@@ -94,3 +104,16 @@ class SpamFilter(object):
     # update the ham data, so your model can learn when it is working
     def add_ham(self, email_path):
         pass
+        
+
+#################################################################################################
+#
+# This is the test case (if you are using a python shell to test, you may want to comment it out)
+#    
+#################################################################################################
+
+check_email = "data/spam/spam1"
+myfilter = SpamFilter()
+print myfilter.is_spam(check_email)
+
+
