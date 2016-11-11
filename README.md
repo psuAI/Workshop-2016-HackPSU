@@ -14,7 +14,7 @@ please send your name and email to ljj5099@psu.edu for all the future notificati
 Setup Instructions: 
 * Install Pycharm IDE: https://www.jetbrains.com/pycharm/download/#section=windows
 * Install Python 2.7.12: https://www.python.org/downloads/
-You should be good to go! 
+* ....and you should be good to go! 
 
 
 Presentation Link:
