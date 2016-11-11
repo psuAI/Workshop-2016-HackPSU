@@ -29,7 +29,7 @@ import os.path
 unknown = "<UNK>"
 trainingDataSpam = "data/spam"
 trainingDataHam = "data/ham"
-smothing = 1e-5
+smoothing = 1e-5
 
 def load_tokens(email_path):
     """DO NOT EDIT THIS FUNCTION! Returns a list of all words in a file."""
