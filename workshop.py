@@ -116,7 +116,7 @@ class SpamFilter(object):
 #    
 #################################################################################################
 
-check_email = "data/spam/spam1"
+check_email = "test/dev190"
 myfilter = SpamFilter()
 print myfilter.is_spam(check_email)
 
