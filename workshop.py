@@ -50,8 +50,10 @@ def get_contents(mail_path):
 
     return contents
 
-# the calculation of the log of possibility, put zero for value if it is unknown
 def log_possibility(value, total, counter):
+    """DO NOT EDIT THIS FUNCTION! The calculation of the log of possibility.
+        Put zero for value if it is unknown."""
+
     return math.log(float(value + smoothing) / (total + smoothing * (len(counter) + 1)))
 
 
