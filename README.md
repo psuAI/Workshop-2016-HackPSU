@@ -19,3 +19,5 @@ Setup Instructions:
 
 Presentation Link:
 https://docs.google.com/presentation/d/1VsfCGL-XsssdJPb46QvaCk_MNQc5VbyN6GDle9xhnZc/edit?usp=sharing
+
+Link to solution from shell (Will be updated with shell-based solution later) https://github.com/rodneywells01/tempaisolution
